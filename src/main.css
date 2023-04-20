@@ -1,0 +1,10 @@
+.hornedBeast {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px;
+}

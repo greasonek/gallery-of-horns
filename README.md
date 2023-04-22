@@ -71,6 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 #### Finish times for implementing features
 
+- CLASS 02 -
+
 - Feature #1 - Display Images
 
 Est time needed to complete: 30min
@@ -100,3 +102,13 @@ Start time: 4/19 6:43pm
 Finish time: 4/19 7:16pm
 
 Actual time needed to complete: 33 minutes
+
+- CLASS 03 -
+
+Est time needed to complete: 2 hours
+
+Start time: 4/22 1:14pm
+
+Finish time: 4/22
+
+Actual time needed to complete: 

@@ -7,4 +7,26 @@
 h1 {
   text-align: center;
   padding: 50px;
+  font-family: 'Irish Grover', cursive;}
+
+.btn.btn-primary{
+  background-color: white;
+  border: white;
+}
+
+.btn.btn-primary:hover{
+  background-color: mediumslateblue;
+}
+
+p {
+  font-size: 20px;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-footer {
+  text-align: center;
 }

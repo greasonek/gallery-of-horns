@@ -109,6 +109,7 @@ Est time needed to complete: 2 hours
 
 Start time: 4/22 1:14pm
 
-Finish time: 4/22
+Finish time: 4/22 3:43pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 2 hours 29 min
+

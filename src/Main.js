@@ -1,17 +1,19 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-import hornedBeastData from "./data.json";
 
 class Main extends React.Component{
   render(){
     return(
     <>
     <div className='hornedBeast'>
-      {hornedBeastData.map(beast =>
+      {this.props.hornedBeastData.map(beast =>
         <HornedBeast 
           title={beast.title}
           image_url={beast.image_url} alt={beast.description} 
           description={beast.description}
+          hornedBeast={beast}
+          showSelectedBeast={this.props.showSelectedBeast}
+          selectedBeast={this.props.selectedBeast}
           />
           )}
     </div>

@@ -1,12 +1,8 @@
 import React from "react";
-import {Card, Button} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 
 
-class HornedBeast extends React.Component{
-  // console.log(this.props.title)
-  // console.log(this.props.description)
-  // console.log(this.props.imgUrl)
-  
+class HornedBeast extends React.Component{  
   constructor(props){
     super(props);
     this.state = {
@@ -19,16 +15,22 @@ class HornedBeast extends React.Component{
     })
   };
   
+  handleModalEvent = () => {
+    this.props.selectedBeast(this.props.hornedBeast);
+    this.props.showSelectedBeast();
+  };
+
     render(){
     return(
     <>
       <Card style={{ width: '18rem' }}>
-      <Button variant="primary" onClick={this.incrementFavCount}><Card.Img variant="top" src={this.props.image_url} alt={this.props.description} height={250}/></Button>
+      {/* <Button variant="primary" onClick={this.props.image_url}> */}
+      <Card.Img variant="top" src={this.props.image_url} alt={this.props.description} height={250} onClick={this.handleModalEvent}/>
       <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Text>
         {this.props.description}
-        <p>{this.state.favCount} ❤️ </p>
+        <p onClick={this.incrementFavCount}>{this.state.favCount} ❤️ </p>
         </Card.Text>
       </Card.Body>
     </Card>

@@ -6,7 +6,7 @@ class Main extends React.Component{
     return(
     <>
     <div className='hornedBeast'>
-      {this.props.hornedBeastData.map(beast =>
+      {this.props.hornedBeastData.map((beast, idx) =>
         <HornedBeast 
           title={beast.title}
           image_url={beast.image_url} alt={beast.description} 
@@ -14,6 +14,7 @@ class Main extends React.Component{
           hornedBeast={beast}
           showSelectedBeast={this.props.showSelectedBeast}
           selectedBeast={this.props.selectedBeast}
+          key={idx}
           />
           )}
     </div>
